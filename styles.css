@@ -92,7 +92,7 @@ body {
 .hero {
     background: #D4FF00;
     color: #000000;
-    padding: 120px 0 80px;
+    padding: 100px 0 60px;
     text-align: center;
 }
 
@@ -102,11 +102,21 @@ body {
     padding: 0 20px;
 }
 
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+.hero-logo {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-logo-img {
+    height: 120px;
+    width: auto;
+    max-width: 550px;
+    transition: transform 0.3s ease;
+}
+
+.hero-logo-img:hover {
+    transform: scale(1.05);
 }
 
 .hero-subtitle {
