@@ -250,14 +250,25 @@ body {
 .page-header {
     background: #D4FF00;
     color: #000000;
-    padding: 120px 0 60px;
+    padding: 100px 0 60px;
     text-align: center;
 }
 
-.page-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+.page-header-logo {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.page-header-logo-img {
+    height: 120px;
+    width: auto;
+    max-width: 550px;
+    transition: transform 0.3s ease;
+}
+
+.page-header-logo-img:hover {
+    transform: scale(1.05);
 }
 
 .page-header p {
