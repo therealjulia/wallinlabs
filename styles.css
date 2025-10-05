@@ -275,7 +275,7 @@ body {
 
 .about-text p {
     margin-bottom: 2rem;
-    color: #386C0B;
+    color: #000000;
     line-height: 1.7;
 }
 
@@ -286,7 +286,7 @@ body {
 
 .feature-list li {
     padding: 0.5rem 0;
-    color: #386C0B;
+    color: #000000;
     position: relative;
     padding-left: 1.5rem;
 }
@@ -310,7 +310,7 @@ body {
     padding: 2rem;
     background: #CEB5A7;
     border-radius: 10px;
-    border: 2px solid #D4FF00;
+    border: 2px solid #000000;
 }
 
 .stat-item h3 {
@@ -321,7 +321,7 @@ body {
 }
 
 .stat-item p {
-    color: #386C0B;
+    color: #000000;
     font-weight: 500;
 }
 
@@ -345,7 +345,7 @@ body {
 
 .contact-info p {
     margin-bottom: 2rem;
-    color: #386C0B;
+    color: #000000;
     line-height: 1.7;
 }
 
@@ -359,7 +359,7 @@ body {
     padding: 1.5rem;
     background: #CEB5A7;
     border-radius: 10px;
-    border: 2px solid #D4FF00;
+    border: 2px solid #000000;
 }
 
 .contact-method h3 {
@@ -371,7 +371,7 @@ body {
 
 .contact-method p {
     margin-bottom: 1rem;
-    color: #386C0B;
+    color: #000000;
 }
 
 .contact-link {
@@ -396,7 +396,7 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border: 2px solid #D4FF00;
+    border: 2px solid #000000;
 }
 
 .contact-form h3 {
@@ -434,7 +434,7 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #D4FF00;
+    border-color: #274A07;
 }
 
 .form-group textarea {
@@ -486,7 +486,7 @@ body {
 }
 
 .footer-bottom {
-    border-top: 1px solid #386C0B;
+    border-top: 1px solid #274A07;
     padding-top: 2rem;
     text-align: center;
 }
@@ -506,7 +506,7 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: #D4FF00;
         width: 100%;
         text-align: center;
         transition: 0.3s;
