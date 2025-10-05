@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #000000;
     background-color: #D4FF00;
@@ -90,8 +90,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: #274A07;
-    color: #D4FF00;
+    background: #D4FF00;
+    color: #000000;
     padding: 120px 0 80px;
     text-align: center;
 }
@@ -146,26 +146,26 @@ body {
 }
 
 .btn-primary {
-    background-color: #000000;
+    background-color: #274A07;
     color: #D4FF00;
-    border-color: #000000;
+    border-color: #274A07;
 }
 
 .btn-primary:hover {
-    background-color: #333333;
-    border-color: #333333;
+    background-color: #1a3505;
+    border-color: #1a3505;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: #D4FF00;
-    border-color: #D4FF00;
+    color: #000000;
+    border-color: #000000;
 }
 
 .btn-secondary:hover {
-    background-color: #D4FF00;
-    color: #000000;
+    background-color: #000000;
+    color: #D4FF00;
     transform: translateY(-2px);
 }
 
@@ -190,17 +190,18 @@ body {
 }
 
 .service-card {
-    background: #ffffff;
+    background: #F8FFD6;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
-    border: 2px solid #000000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .service-card h3 {
@@ -237,8 +238,8 @@ body {
 
 /* Page Header */
 .page-header {
-    background: #274A07;
-    color: #D4FF00;
+    background: #D4FF00;
+    color: #000000;
     padding: 120px 0 60px;
     text-align: center;
 }
@@ -308,9 +309,11 @@ body {
 .stat-item {
     text-align: center;
     padding: 2rem;
-    background: #CEB5A7;
+    background: #F8FFD6;
     border-radius: 10px;
-    border: 2px solid #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-item h3 {
@@ -323,6 +326,11 @@ body {
 .stat-item p {
     color: #000000;
     font-weight: 500;
+}
+
+.stat-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Contact Content */
@@ -357,9 +365,11 @@ body {
 
 .contact-method {
     padding: 1.5rem;
-    background: #CEB5A7;
+    background: #F8FFD6;
     border-radius: 10px;
-    border: 2px solid #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-method h3 {
@@ -372,6 +382,11 @@ body {
 .contact-method p {
     margin-bottom: 1rem;
     color: #000000;
+}
+
+.contact-method:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .contact-link {
@@ -392,11 +407,12 @@ body {
 
 /* Contact Form */
 .contact-form-container {
-    background: #ffffff;
+    background: #F8FFD6;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border: 2px solid #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form h3 {
@@ -422,7 +438,7 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #CEB5A7;
+    border: 2px solid #000000;
     border-radius: 6px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -440,6 +456,11 @@ body {
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+.contact-form-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */

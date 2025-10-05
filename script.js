@@ -101,10 +101,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.backgroundColor = 'rgba(212, 255, 0, 0.95)';
         navbar.style.backdropFilter = 'blur(10px)';
     } else {
-        navbar.style.backgroundColor = '#ffffff';
+        navbar.style.backgroundColor = '#D4FF00';
         navbar.style.backdropFilter = 'none';
     }
 });
