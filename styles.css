@@ -581,6 +581,10 @@ body {
         width: 200px;
     }
 
+    .about-content {
+        padding: 20px 0;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
