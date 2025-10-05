@@ -271,6 +271,12 @@ body {
     transform: scale(1.05);
 }
 
+.page-header-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
 .page-header p {
     font-size: 1.2rem;
     opacity: 0.9;
@@ -356,7 +362,26 @@ body {
 
 /* Contact Content */
 .contact-content {
-    padding: 80px 0;
+    padding: 40px 0;
+}
+
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.contact-form-wrapper p {
+    margin-bottom: 2rem;
+    color: #000000;
+    font-size: 1.1rem;
 }
 
 .contact-grid {

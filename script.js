@@ -37,7 +37,7 @@ Message:
 ${data.message}
         `.trim();
         
-        const mailtoLink = `mailto:hello@wallinlabs.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:wallin.labs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         
         // Open email client
         window.location.href = mailtoLink;
