@@ -307,6 +307,18 @@ body {
     line-height: 1.7;
 }
 
+.inline-link {
+    color: #274A07;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.inline-link:hover {
+    color: #1a3505;
+    text-decoration: underline;
+}
+
 .feature-list {
     list-style: none;
     padding: 0;
