@@ -16,39 +16,6 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 // Contact Form Handling
 const contactForm = document.getElementById('contactForm');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Create mailto link with form data
-        const subject = `Contact from ${data.name} - ${data.service || 'General Inquiry'}`;
-        const body = `
-Name: ${data.name}
-Email: ${data.email}
-Company: ${data.company || 'Not provided'}
-Service Interest: ${data.service || 'Not specified'}
-Budget Range: ${data.budget || 'Not specified'}
-
-Message:
-${data.message}
-        `.trim();
-        
-        const mailtoLink = `mailto:hello@wallinlabs.agency?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
-        // Open email client
-        window.location.href = mailtoLink;
-        
-        // Show success message
-        showMessage('Thank you! Your email client should open with a pre-filled message. Please send it to complete your inquiry.', 'success');
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
 
 // Show message function
 function showMessage(text, type = 'info') {
