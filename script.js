@@ -13,43 +13,6 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     navMenu.classList.remove('active');
 }));
 
-// Contact Form Handling
-const contactForm = document.getElementById('contactForm');
-
-
-// Show message function
-function showMessage(text, type = 'info') {
-    // Remove existing message if any
-    const existingMessage = document.querySelector('.form-message');
-    if (existingMessage) {
-        existingMessage.remove();
-    }
-    
-    // Create message element
-    const message = document.createElement('div');
-    message.className = `form-message form-message-${type}`;
-    message.textContent = text;
-    message.style.cssText = `
-        padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 6px;
-        font-weight: 500;
-        ${type === 'success' ? 'background-color: #d1fae5; color: #065f46; border: 1px solid #a7f3d0;' : ''}
-        ${type === 'error' ? 'background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5;' : ''}
-        ${type === 'info' ? 'background-color: #dbeafe; color: #1e40af; border: 1px solid #93c5fd;' : ''}
-    `;
-    
-    // Insert message after form
-    contactForm.parentNode.insertBefore(message, contactForm.nextSibling);
-    
-    // Remove message after 5 seconds
-    setTimeout(() => {
-        if (message.parentNode) {
-            message.remove();
-        }
-    }, 5000);
-}
-
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -76,20 +39,3 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add loading animation for buttons
-document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('click', function(e) {
-        // Only add loading for form submissions
-        if (this.type === 'submit') {
-            const originalText = this.textContent;
-            this.textContent = 'Sending...';
-            this.disabled = true;
-            
-            // Reset after a delay (in case of errors)
-            setTimeout(() => {
-                this.textContent = originalText;
-                this.disabled = false;
-            }, 3000);
-        }
-    });
-});
