@@ -74,6 +74,21 @@ body {
     color: #274A07;
 }
 
+.nav-link-external {
+    color: #274A07;
+    font-weight: 700;
+}
+
+.nav-link-external:hover {
+    color: #1a3505;
+}
+
+.nav-link-external .external-arrow {
+    display: inline-block;
+    margin-left: 0.2em;
+    font-weight: 400;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
